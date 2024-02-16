@@ -75,7 +75,7 @@ class AMP_Content_Sanitizer {
 		foreach ( $sanitizer_classes as $sanitizer_class => $sanitizer_args ) {
 			if ( ! class_exists( $sanitizer_class ) ) {
 				/* translators: %s is sanitizer class */
-				_doing_it_wrong( __METHOD__, sprintf( esc_html__( 'Sanitizer (%s) class does not exist', 'amp' ), esc_html( $sanitizer_class ) ), '0.4.1' );
+				//_doing_it_wrong( __METHOD__, sprintf( esc_html__( 'Sanitizer (%s) class does not exist', 'amp' ), esc_html( $sanitizer_class ) ), '0.4.1' );
 				continue;
 			}
 
